@@ -170,3 +170,84 @@ alert(item); //"green"
 alert(colors.length); //2
 ```
 
+## 重排序
+
+### reverse
+
+反转数组项的顺序
+
+### sort
+
+默认按升序排列
+
+调用数组项的toString()转型方法，然后比较得到的字符串
+
+可接收比较函数
+
+```js
+function compare (value1,value2) {
+    return value1 - value2;
+}
+```
+
+## 操作方法
+
+### slice
+
+基于当前数组中的一项或者多项创建一个新数组
+
+接受一个或者两个参数，即要返回项的起始和结束位置（不包括结束位置）
+
+只有一个参数时，返回到数组最后一项
+
+### concat
+
+基于当前数组中的所有项创建一个新数组
+
+### splice
+
+splice() 方法向/从数组中添加/删除项目，然后返回被删除的项目。该方法会改变原始数组。
+
+- 删除
+- 插入
+- 替换
+
+```js
+var colors = ["red","green","blue"]
+var reomved = colors.splice(0,1)
+```
+
+前两项为起始位置和要删除的项数，其后为要增加的元素
+
+## 位置方法
+
+比较时会使用全等操作符
+
+### indexOf
+
+从数组开头向后查找
+
+### lastIndexOf
+
+从数组末尾向前查找
+
+## Date
+
+## RegExp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
